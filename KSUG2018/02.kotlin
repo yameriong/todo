@@ -1,0 +1,113 @@
+bpm솔루션, 헬스케어 
+코틀린이 트렌드 이런거 보다 
+
+생산성, 직관석이 좋은 언어를 강조
+
+go루인, ko루틴으로 
+
+코틀린! 장점
+* 자바 호환성 100%
+    -jvm어노테이션을 추가해야 합니다 불편해용 (interoperability) @jvmXXXX
+* 스마트케스트 
+패턴매칭이 있어! 타입을 is로 체크할 수 있어 instance.of 사용안해도댐
+
+String? = nullable
+
+java 뮤터블이 기본
+코틀린 이뮤터블 그래서 카피.라는 메소드가 있어
+
+default auguments
+
+코딩의 습관 함수의 시그니쳐를 만들고 바디는 나중에 만드는데 
+
+겟터 세터 없어
+
+null읎어 ㅋㅋ
+
+오퍼레이터 오버라이딩 자바 안댕
+
+?은 nullable이양
+
+bad
+
+no namespace! package에 읎엉
+-- 질문 java9에서 패키지영역이 나뉘는데요 이건 어떻게 처리하나요??
+
+static이 없고 컨페니언 오브젝트가 필요해
+
+ugly
+sam conversion
+
+코틀린에서 자바 스트림 호출할때 registerCallBack() 할때 return Unit.Instance; 써야
+
+java void = kotlin 
+
+Final by defult -> ? 더 질문
+
+corutines
+장점 : readable, clean code
+
+멀티스레스 선정형 몰들어옴 
+근데 이건 들어와, fiver, gorutines
+
+비동기를 거이 사용한다. 
+
+java bite코드 기반
+
+고랭 추천하시는분들 
+
+라이트웨이드 스레드가 늘어
+
+도입 전략
+* 개발자 수준 편차가 크다.
+* 가장 못하는 수준에 의해서 결정됩니다.
+
+변화를 추구하려면?
+* 객관적 시각 유지
+
+debop4k 깃허브
+
+2. korean tokenizer 
+명사만 뜯어내면 됩니다. 처음에 검색팀꺼 하다가 자기꺼 뜯어씀 
+
+"제테스 msw-3928pr 남성 비치트런트"
+jmh로 test 가능합니다.!! 성능
+
+쿠팡 카프카 
+offset관리 잘 안댕 그래서 수정해야해
+
+셀러 리테일에서 카프카로 등록하고
+
+상품이 있는지 확인 정제 프로세싱 상품 만든다
+
+메시지 디스페쳐가 다 알아서 해준다. 
+
+파이프라인? 
+
+상품을 넣는 방식이 어떻게 됩니까??
+
+반성 - > coroutines이 학습 및 테스트 
+    * 비동기 어렵다
+    * Coroutines는 하나뿐이야
+
+안정적 도입 
+java 퀄리티 별로, 
+* 충분한 학습 기회 & 실습
+
+효과
+safety code 
+
+스칼라 = 스파크
+
+requery 사용 하이버네이트 걷어낸다.
+왜 jpa 걷어내?? -> 벌크데이터를 사용하는 곳에서는 어울리지 않아 오피스툴 그룹웨어
+1억건 흘러가는 data인데 쓸 필요가 없어!
+
+requery orm툴인데 stateliss합니다. mybatis에 랭귀지 버전이라고 생각하면 됩니다.
+
+
+
+
+스프링 웹플럭스 리엑티드 확인해보녀 엄청난다.
+
+웹플럭스 + 코틀린 편해

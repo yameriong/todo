@@ -1,0 +1,71 @@
+마이크로 프로파일 
+우버jar
+
+oriduces = MediaType.TEXT_PLAIN
+
+@VALUE{} <- yal에있는 파일 읽어오는것
+
+우리는 헬스체크 기능 어떻게 쓰지??
+
+스루풋
+
+프로메테우스를 사용해서 test합니다.!!?
+
+metrice을 프로메테우스로 url연결만 하면 그래프를 확인 할 수 있습니다.
+
+grafaca를 통해서 대시보드로 표현이 가능합니다.
+
+결합 내성?
+전체 시스템 중 일부 결함이 발생하더라도 정상 또는 부분적 기능 수행이 가능하게 하는 것
+msa에서 엄청 중요함
+
+1. 통합지점 (Integration points)
+* 하나의 시스템이나 응용프로그렘에서 N/W를 통해 다른 시스템 또는 응용프로그램을 이동하는 지점(DB연결, Rest API 호출)
+* 결국 실패한다 대비해야함
+* 통합지점은 연쇄적인 고장을 이룬다 대비하라
+
+톰캣 스레드 풀이 가득찰때 까지 죽은 디팬던시를 보고있으면
+
+모두 바라 보는 엔티티가 한없이 call이 된다면...?
+
+서비스 죽는다. 그래서 여럿 패턴들이 지원한다. 
+
+spring = Netflix hystrix으로 구현
+
+비동기화??
+
+결함 내성에서 서킷 브래이크!가 있는데
+@CircuitBreaker
+
+요청 실패횟수가 임계치에 초과할 경우 자동으로 차단
+
+3가지 상태
+closed
+open
+half-open
+
+@bulkhead
+하나가 고장나도 응용 프로그램 요소를 여러 풀에 격리하는 패턴
+선박 강성 증가
+기능 영역별 공간 사용
+방수 공간 있어!
+
+thread pool 방식이 있어(선호)
+모든 요청을 별도의 대기큐르 가진 thread pool에 할당하는 방식
+
+서로 호출하는 서비스에서 jwt (json web token propagation = )
+
+@opentracion 
+분산추적 가능.
+구간구간 스루풋을 볼 수 있어!
+
+zipkin = spring cloud sleuth (이거랑 연동하면) 
+
+restclient 다른 내용을 call 할 수 있는데 
+이전처럼 json 버퍼로 파싱할 수 없자나
+SpringRestTemolate 사용법 보기
+
+typesafe하게 할 수 있다.
+
+가장 중요한건 typeSafe입니다.!
+
