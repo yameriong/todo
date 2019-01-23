@@ -1,0 +1,33 @@
+왜 톰켓을 쓰지?
+
+java 웹어플리케이션서버를 개발 운영시 사용 , jsp/서블릿을  web app 서버를 사용하기위해 톰켓
+
+장점 
+1. 무료
+2. 오퍼레이팅 크로스 플렛폼 os가리지 않고 사용합니다.
+
+구성 요소
+
+Catalina (서블릿 컨테이너)
+자바 서블릿을 호스팅
+
+Coyote (http 컴포넌트)
+http 관련 class나 component에서 익셉션 발견 가
+Tomcat에 TCP를 통한 프로토콜 지
+
+Jasper (Tomcat Jsp 엔진)
+실제 JSP Page에 요청을 처리하는 서블릿
+
+ex) 
+
+Coyote > Catalina > Jasper 순서로 작동
+
+http 요청을 Coyote가 받고 카탈리나에서 java Web App 해석 실행하고 일부가 jsp다 라고하면 jasper가 처리한다.
+
+Tomcat은 엄밀하게 말하면 Was는 아닙니다.
+
+tomcat은 javaSE만 충족
+
+결과적으로 
+
+java EE와 javaSE
