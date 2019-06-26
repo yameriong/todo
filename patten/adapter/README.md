@@ -35,8 +35,8 @@ public class Member extends Adapter, Targer{
 
 > * 장점 : 어댑터를 전체를 다시 구현할 필요가 없다(속도 향상)
 
-* 클래스에 의한 Adapter 패턴 (상속)
-![Alt text](/img/adapter_02.png)
+* 클래스에 의한 Adapter 패턴 (상속)  
+![Alt text](/img/adapter_02.png)  
 
 I) Print 인터페이스 구현 (Target 역할)
 ```{.java}
@@ -80,8 +80,8 @@ public class PrintBanner extends Banner implements Print {
 
 * 인스턴스에 의한 Adapter 패턴 (위임)
 > * 단점: 어댑터(Adapter)클래스의 대부분의 코드를 구현해야하기때문에 효율적이지 못하다
-> * 장점: 구성(Composition)을 사용하기 때문에 더 뛰어나다.(유연하다)
-![Alt text](/img/adapter_03.png)
+> * 장점: 구성(Composition)을 사용하기 때문에 더 뛰어나다.(유연하다)  
+![Alt text](/img/adapter_03.png)  
 I) Print 인터페이스 구현 (Target 역할)
 ```{.java}
 public interface Print {
