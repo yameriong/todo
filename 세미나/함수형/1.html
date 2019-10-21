@@ -1,0 +1,88 @@
+<!--리습(list중심으로 사고) 클로져(특정 함수를), 엘릭서,
+타입중시 하스켈:언렝, 스칼라
+
+일급함수 ,클로져 이걸로 다 함수형으로 쌓여있다.
+항상 상수르 담고-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script>const {log, clear} = console;</script>
+    <script src="fx.js"></script>
+</head>
+<body>
+
+1. ES6+ 기본기
+
+- 이터러블
+    - 순회 가능한 값.
+    - iterable[Symbol.iterator]()로 이터레이터를 리턴하는 값.
+    - 이터레이터
+        - iterator.next()가 { value: Any, done: Boolean }를 리턴하는 값
+<script>
+    const arr = [1,2,3];
+    const iter = arr[Symbol.iterator](); //외부적으로 쓸 심볼 이터레이터를 쓴다.
+    const rangeIterator = () => ({
+        next () {
+            return start < end ?
+                {value : start++, done : false } :
+                {value : undefined, done : true}
+        }});
+</script>
+
+- for...of 가 내부적으로 하는 일
+<script>
+</script>
+
+- 제너레이터
+- 실행하면 이터레이터를 반환하는 함수
+- yield 로 next()의 value 값을 발생
+- return 을 하면 { done: true }
+<script type="module">
+
+
+</script>
+
+2. map, filter
+- map
+- filter
+<script type="module">
+    //head: list 처음, tail: 처음꺼 빼고 다
+function map(f, iter) {
+
+}
+
+
+</script>
+
+3. 이터러블 프로토콜로 다시 만들기
+- L.map
+- L.filter
+- L.take
+- L.takeUntil
+<script type="module">
+    함수형언어는 값변이를 안하려고 하는데 하고있는데?
+    이 맵이라는 함수자체가 이 스코프안에서 하는거지 자른 곳에 선언 하는게 아님
+    문장이 없으면 오류가 날 이유가 없다.
+        표현식만 있으면.
+</script>
+
+4. 지연 평가와 제너레이터
+엄격한 : 즉시 결과가 나와야 한다.
+
+- range
+- 동작 순서와 효율
+<script type="module">
+
+</script>
+
+5. 명령형을 이터러블 프로그래밍으로 전환 1
+- 홀수 n개 더하기 명령형 코드
+<script type="module">
+
+</script>
+
+</body>
+</html>
